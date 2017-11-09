@@ -15,8 +15,8 @@
   min-width: 50%;
   min-height: 50%;
 }
-.title
-{
+h1{
+position:absolute;
 color:white;
 font-size:24px;
 }
