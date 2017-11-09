@@ -1,5 +1,7 @@
-#theme{
-background-image: url("https://media.giphy.com/media/zJfzvccEqkAms/giphy.gif");
-        background-size: 1221px 660px;
-        background-repeat: no-repeat;
+body{
+background: url("https://media.giphy.com/media/zJfzvccEqkAms/giphy.gif") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
