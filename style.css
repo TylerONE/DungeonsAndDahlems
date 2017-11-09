@@ -14,9 +14,11 @@
   margin: auto; 
   min-width: 50%;
   min-height: 50%;
+  z-index:1;
 }
 .title
 {
 color:white;
 font-size:24px;
+  z-index:2;
 }
