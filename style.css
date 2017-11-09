@@ -1,4 +1,6 @@
 body{
         background-image: url("https://media.giphy.com/media/l41YcgNSPj6Wy1KyQ/giphy.gif");
+        width:100%;
+        height:100%;
         background-repeat: no-repeat;
      }
