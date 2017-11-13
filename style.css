@@ -20,4 +20,5 @@ h1{
 position: absolute;
 color:white;
 font-size:24px;
+z-index: 1;
 }
