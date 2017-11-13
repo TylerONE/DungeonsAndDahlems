@@ -16,10 +16,8 @@
   min-height: 50%;
   z-index: -1;
 }
-.title{
+.top{
 position: absolute;
-color:white;
-font-size:42px;
 z-index: 1;
 text-align:center;
 }
