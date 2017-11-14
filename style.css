@@ -19,7 +19,7 @@
   z-index: -1;
 }
 .top{
-position: relative;
+position: absolute;
 z-index: 1;
 text-align:center;
 right: 0;
@@ -48,4 +48,6 @@ img.startBtn:hover
 {
   background:url("images/start2.gif")
 }
-
+#relSize{
+  position: relative;
+}
