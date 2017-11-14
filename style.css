@@ -1,3 +1,7 @@
+#relSize{
+  width:100%
+  height:100%
+}
 #bg {
   position: relative; 
   top: -50%; 
@@ -47,7 +51,4 @@ img.startBtn:hover
 {
   background:url("images/start2.gif")
 }
-#relSize{
-  width:100%
-  height:100%
-}
+
