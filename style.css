@@ -43,3 +43,7 @@ left: 0;
   text-align:center;
   z-index: 1;
 }
+img.startBtn:hover
+{
+  url("start2.gif")
+}
