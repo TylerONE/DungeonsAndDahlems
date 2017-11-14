@@ -36,6 +36,8 @@ left: 0;
   text-align:center;
 }
 .menu{
+  position: absolute;
+  margin-top: 200px;
   left:0;
   right:0;
   text-align:center;
