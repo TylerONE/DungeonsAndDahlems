@@ -19,7 +19,7 @@
   z-index: -1;
 }
 .top{
-position: relative;
+position: absolute;
 z-index: 1;
 text-align:center;
 right: 0;
@@ -29,7 +29,7 @@ min-height: 1%;
 }
 .footnote
 {
-  position: relative;
+  position: absolute;
   left:0;
   right:0;
   bottom:0;
@@ -54,4 +54,8 @@ img.startBtn:hover
 {
   background:url("images/start2.gif")
 }
-
+ #relSize{
+  width:100%;
+  height:100%;
+  position: relative;
+}
