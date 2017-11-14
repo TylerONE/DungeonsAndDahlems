@@ -19,7 +19,7 @@
   z-index: -1;
 }
 .top{
-position: absolute;
+position: relative;
 z-index: 1;
 text-align:center;
 right: 0;
@@ -29,7 +29,7 @@ min-height: 1%;
 }
 .footnote
 {
-  position: absolute;
+  position: relative;
   left:0;
   right:0;
   bottom:0;
@@ -41,7 +41,7 @@ min-height: 1%;
   min-height: 1%;
 }
 .menu{
-  position: absolute;
+  position: relative;
   margin-top: 200px;
   left:0;
   right:0;
