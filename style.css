@@ -45,5 +45,5 @@ left: 0;
 }
 img.startBtn:hover
 {
-  url("start2.gif")
+  background:url("start2.gif")
 }
