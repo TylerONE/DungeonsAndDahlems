@@ -18,6 +18,14 @@
   min-height: 50%;
   z-index: -1;
 }
+canvas{
+ z-index: 1;
+ text-align:center;
+ right:0;
+ left:0;
+ position: absolute;
+ margin-top: 250px;
+}
 .top{
 position: absolute;
 z-index: 1;
