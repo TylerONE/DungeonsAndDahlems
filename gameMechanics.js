@@ -11,7 +11,7 @@ function loadImage(url){
 cont canvas = document.getElementById('gameScreen');
 const context = canvas.getContext('2d');
 
-context.fillREct(0,0,50,50);
+context.fillRect(0,0,50,50);
 
 loadImage('/gameBase/tileset.png')
 .the(image => {
