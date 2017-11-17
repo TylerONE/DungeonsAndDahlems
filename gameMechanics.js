@@ -8,7 +8,7 @@ function loadImage(url){
  });
 }
 
-cont canvas = document.getElementById('gameScreen');
+const canvas = document.getElementById('gameScreen');
 const context = canvas.getContext('2d');
 
 context.fillRect(0,0,50,50);
