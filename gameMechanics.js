@@ -1,24 +1,17 @@
-window.onload = startGame();
-function startGame() {
-    myGameArea.start();
-    myGamePiece = new character(30, 30, "red", 10, 120);
+function loadImage(url){
+ return new Promise(resolve => {
+     const image = new Image();
+     image.addEventListener('load', () =>{
+         resolve(image);
+     });
+     image.src = url;
+ });
 }
 
-var myGameArea = {
-    canvas : document.createElement("gameScreen"),
-    start : function() {
-        this.canvas.width = 1500;
-        this.canvas.height = 500;
-        this.context = this.canvas.getContext("2d");
-        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
-    }
-}
-function character(width, height, color, x, y) {
-    this.width = width;
-    this.height = height;
-    this.x = x;
-    this.y = y; 
-    ctx = myGameArea.context;
-    ctx.fillStyle = color;
-    ctx.fillRect(this.x, this.y, this.width, this.height);
-}
+cont canvas = document.getElementById('gameScreen');
+const context = canvas.getContext('2d');
+
+loadImage('/gameBase/tileset.png')
+.the(image => {
+    context.drawImage(image,0, 0);
+});
