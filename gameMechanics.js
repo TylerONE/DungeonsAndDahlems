@@ -14,6 +14,6 @@ const context = canvas.getContext('2d');
 context.fillRect(0,0,50,50);
 
 loadImage('/gameBase/tileset.png')
-.the(image => {
+.then(image => {
     context.drawImage(image,0, 0);
 });
