@@ -15,5 +15,5 @@ context.fillRect(0,0,50,50);
 
 loadImage('gameBase/tileset.png')
 .then(image => {
-    context.drawImage(image,0, 0);
+    context.drawImage(image,0, 0, 1500, 500);
 });
