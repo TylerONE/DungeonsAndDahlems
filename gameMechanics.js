@@ -15,5 +15,5 @@ loadImage('gameBase/tileset.png')
 .then(image => {
     context.drawImage(image,
                       0, 12, 30,25,
-                      0, 0, 30, 25);
+                      0, 0, 1500, 500);
 });
