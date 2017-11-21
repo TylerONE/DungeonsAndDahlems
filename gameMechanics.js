@@ -46,7 +46,7 @@ loadImage('gameBase/tileset.png')
 .then(image => {
     const sprites = new SpriteSheet(image, 32, 32);
     sprites.define('ground', 0, 0);
-    sprite.draw('ground',context, 45, 62);
+    sprites.draw('ground',context, 45, 62);
  
     context.drawImage(image,
                       0, 0, 
