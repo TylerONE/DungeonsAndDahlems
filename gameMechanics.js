@@ -8,7 +8,7 @@ loadImage('gameBase/tileset.png')
 .then(image => {
     const sprites = new SpriteSheet(image, 32, 32);
     sprites.define('ground', 0, 0);
-    sprites.define('sky', 3, 22.89);
+    sprites.define('sky', 2.989, 22.89);
     
     for(let x = 0; x < 25; ++x) {
         for(let y = 0; y < 14; ++y){
