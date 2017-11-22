@@ -1,4 +1,4 @@
-import SpriteSheet fom './SpriteSheet.js';
+import SpriteSheet from './SpriteSheet.js';
 
 function loadImage(url){
  return new Promise(resolve => {
