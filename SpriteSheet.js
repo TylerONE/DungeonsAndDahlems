@@ -28,6 +28,3 @@ export default class SpriteSheet{
   context.drawImage(buffer, x, y);
  }
 }
-
-const canvas = document.getElementById('gameScreen');
-const context = canvas.getContext('2d');
