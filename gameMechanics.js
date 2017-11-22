@@ -15,4 +15,4 @@ loadImage('gameBase/tileset.png')
     const sprites = new SpriteSheet(image, 32, 32);
     sprites.define('ground', 0, 0);
     sprites.draw('ground',context, 45, 62);
- 
+});
