@@ -8,6 +8,6 @@ loadImage('gameBase/tileset.png')
 .then(image => {
     const sprites = new SpriteSheet(image, 32, 32);
     sprites.define('ground', 0, 0);
-    sprites.define('sky', 0, 0);
+    sprites.define('sky', 3, 23);
     sprites.draw('sky',context, 45, 62);
 });
