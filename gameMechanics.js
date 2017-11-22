@@ -1,4 +1,5 @@
 import SpriteSheet from './SpriteSheet.js';
+import {loadImage} from './loaders.js';
 
 const canvas = document.getElementById('gameScreen');
 const context = canvas.getContext('2d');
