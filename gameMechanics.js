@@ -9,5 +9,10 @@ loadImage('gameBase/tileset.png')
     const sprites = new SpriteSheet(image, 32, 32);
     sprites.define('ground', 0, 0);
     sprites.define('sky', 3, 23);
-    sprites.draw('sky',context, 45, 62);
+    
+    for(Let x = 0; x < 25; ++x) {
+        for(Let y = 0; y < 14; ++y){
+            sprites.draw('sky',context, x * 32, y * 32);  
+        }
+    }
 });
