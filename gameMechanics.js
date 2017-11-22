@@ -10,6 +10,9 @@ function loadImage(url){
  });
 }
 
+const canvas = document.getElementById('gameScreen');
+const context = canvas.getContext('2d');
+
 loadImage('gameBase/tileset.png')
 .then(image => {
     const sprites = new SpriteSheet(image, 32, 32);
