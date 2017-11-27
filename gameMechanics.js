@@ -12,7 +12,13 @@ loadImage('gameBase/tileset.png')
     
     for(let x = 0; x < 47; ++x) {
         for(let y = 0; y < 16; ++y){
-            sprites.draw('sky',context, x * 32, y * 32);  
+            sprites.draw('sky',context, x, y);  
+        }
+    }
+    
+    for(let x = 0; x < 47; ++x) {
+        for(let y = 12; y < 16; ++y){
+            sprites.draw('ground',context, x, y);  
         }
     }
 });
