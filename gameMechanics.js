@@ -24,20 +24,6 @@ loadImage('gameBase/tileset.png')
     
     loadLevel('level1')
     .then(level => {
-        console.log(level);
         drawBackground(level.backgrounds[0], context, sprites);
-    });
-        
-    
-    for(let x = 0; x < 47; ++x) {
-        for(let y = 12; y < 16; ++y){
-            sprites.drawTile('upperGround',context, x, y);  
-        }
-    }
-    
-    for(let x = 0; x < 47; ++x) {
-        for(let y = 13; y < 16; ++y){
-            sprites.drawTile('lowerGround',context, x, y);  
-        }
-    }
+    });      
 });
