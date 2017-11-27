@@ -1,5 +1,5 @@
 import SpriteSheet from './SpriteSheet.js';
-import {loadImage} from './loaders.js';
+import {loadImage, loadLevel} from './loaders.js';
 
 const canvas = document.getElementById('gameScreen');
 const context = canvas.getContext('2d');
@@ -10,6 +10,12 @@ loadImage('gameBase/tileset.png')
     sprites.define('upperGround', 0, 0);
     sprites.define('lowerGround', 0, 1);
     sprites.define('sky', 2.92, 22.89);
+    
+    loadLevel('level1')
+    .then(level => {
+        console.log(level)
+    });
+        
     
     for(let x = 0; x < 47; ++x) {
         for(let y = 0; y < 16; ++y){
