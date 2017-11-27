@@ -8,6 +8,24 @@
                 0, 16
               ]
           ]
+        },
+        {
+          "tile": "upperGround",
+          "ranges": [
+              [
+                0, 47,
+                12, 16
+              ]
+          ]
+        },
+        {
+          "tile": "lowerGround",
+          "ranges": [
+              [
+                0, 47,
+                13, 16
+              ]
+          ]
         }
     ]
 }
