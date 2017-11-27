@@ -24,7 +24,7 @@ loadImage('gameBase/tileset.png')
     }
     
     for(let x = 0; x < 47; ++x) {
-        for(let y = 14; y < 16; ++y){
+        for(let y = 13; y < 16; ++y){
             sprites.drawTile('lowerGround',context, x, y);  
         }
     }
