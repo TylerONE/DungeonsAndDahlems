@@ -13,7 +13,7 @@ loadImage('gameBase/tileset.png')
     
     loadLevel('level1')
     .then(level => {
-        console.log(level)
+        console.log(level);
     });
         
     
