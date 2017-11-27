@@ -10,8 +10,8 @@ loadImage('gameBase/tileset.png')
     sprites.define('ground', 0, 0);
     sprites.define('sky', 2.98, 22.89);
     
-    for(let x = 0; x < 25; ++x) {
-        for(let y = 0; y < 14; ++y){
+    for(let x = 0; x < 47; ++x) {
+        for(let y = 0; y < 16; ++y){
             sprites.draw('sky',context, x * 32, y * 32);  
         }
     }
