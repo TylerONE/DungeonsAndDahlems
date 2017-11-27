@@ -24,6 +24,8 @@ loadImage('gameBase/tileset.png')
     
     loadLevel('level1')
     .then(level => {
-        drawBackground(level.backgrounds[0], context, sprites);
+        level.backgrounds.forEach(background => {
+        drawBackground(background, context, sprites);
+        });
     });      
 });
