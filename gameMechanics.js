@@ -31,7 +31,6 @@ Promise.all([
     loadLevel('level1'),
     ])
 .then(([sprites, level]) => {
-    console.log('Level loaded', level);
     level.backgrounds.forEach(background => {
         drawBackground(background, context, sprites);
         });
