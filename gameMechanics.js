@@ -12,20 +12,27 @@ function drawBackground(background, context, sprites) {
     });
 }
 
+function loadBackgroundSprites() {
+    return loadImage('gameBase/tileset.png')
+    .then(image => {
+        const sprites = new SpriteSheet(image, 32, 32);
+        sprites.define('upperGround', 0, 0);
+        sprites.define('lowerGround', 0, 1);
+        sprites.define('sky', 2.92, 22.89);
+        return sprites;
+    });
+}
+
 const canvas = document.getElementById('gameScreen');
 const context = canvas.getContext('2d');
-
-loadImage('gameBase/tileset.png')
-.then(image => {
-    const sprites = new SpriteSheet(image, 32, 32);
-    sprites.define('upperGround', 0, 0);
-    sprites.define('lowerGround', 0, 1);
-    sprites.define('sky', 2.92, 22.89);
     
-    loadLevel('level1')
-    .then(level => {
-        level.backgrounds.forEach(background => {
+Promise.all([
+    loadBackgroundSprites(),
+    loadLevel('level1'),
+    ])
+.then(([sprites, level]) => {
+    console.log('Level loaded', level);
+    level.backgrounds.forEach(background => {
         drawBackground(background, context, sprites);
         });
-    });      
 });
