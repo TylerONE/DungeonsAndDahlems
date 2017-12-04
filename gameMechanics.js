@@ -39,8 +39,10 @@ Promise.all([
     loadBackgroundSprites(),
     loadLevel('level1'),
     ])
-.then(([sprites, level]) => {
+.then(([dahlemSprite, sprites, level]) => {
     level.backgrounds.forEach(background => {
         drawBackground(background, context, sprites);
         });
+    
+    dahlemSprite.draw('idle', context, 64, 64);
 });
