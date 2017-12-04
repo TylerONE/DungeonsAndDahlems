@@ -24,9 +24,9 @@ function loadBackgroundSprites() {
     return loadImage('gameBase/tileset.png')
     .then(image => {
         const sprites = new SpriteSheet(image, 32, 32);
-        sprites.define('upperGround', 0, 0);
-        sprites.define('lowerGround', 0, 1);
-        sprites.define('sky', 2.92, 22.89);
+        sprites.defineTile('upperGround', 0, 0);
+        sprites.defineTile('lowerGround', 0, 1);
+        sprites.defineTile('sky', 2.92, 22.89);
         return sprites;
     });
 }
