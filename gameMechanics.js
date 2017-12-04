@@ -15,7 +15,7 @@ function loadDahlemSprite() {
     return loadImage('gameBase/Character.png')
     .then(image => {
         const sprites = new SpriteSheet(image, 32, 32);
-        sprites.define('idle', 16, 0);
+        sprites.define('idle', 16, 0, 16, 16);
         return sprites;
     });
 }
