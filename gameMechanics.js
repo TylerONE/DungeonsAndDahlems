@@ -11,6 +11,14 @@ function drawBackground(background, context, sprites) {
     }
     });
 }
+function loadDahlemSprite() {
+    return loadImage('gameBase/Character.png')
+    .then(image => {
+        const sprites = new SpriteSheet(image, 32, 32);
+        sprites.define('idle', 16, 0);
+        return sprites;
+    });
+}
 
 function loadBackgroundSprites() {
     return loadImage('gameBase/tileset.png')
@@ -27,6 +35,7 @@ const canvas = document.getElementById('gameScreen');
 const context = canvas.getContext('2d');
     
 Promise.all([
+    loadDahlemSprite(),
     loadBackgroundSprites(),
     loadLevel('level1'),
     ])
