@@ -5,7 +5,7 @@ export default class SpriteSheet{
   this.height = height;
   this.tiles = new Map();
   }
-  define(name, x, y, widht, height){
+  define(name, x, y, width, height){
     const buffer = document.createElement('canvas');
     buffer.width = width;
     buffer.height = height;
