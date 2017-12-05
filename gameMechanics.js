@@ -33,11 +33,11 @@ function createBackgroundLayer(backgrounds, sprites) {
     buffer.height = 240; //500px
     
     backgrounds.forEach(background => {
-        drawBackground(background, backgroundBuffer.getContext('2d'), sprites);
+        drawBackground(background, buffer.getContext('2d'), sprites);
       });
     
     return function drawBackgroundLayer(context) {
-      context.drawImage(backgroundBuffer, 0, 0);
+      context.drawImage(buffer, 0, 0);
     };
 }
 
