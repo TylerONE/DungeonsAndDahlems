@@ -30,5 +30,12 @@ Promise.all([
         y:64,
     };
     
-    dahlemSprite.draw('idle', context, pos.x, pos.y);
+    function update() {
+        dahlemSprite.draw('idle', context, pos.x, pos.y);
+        pos.x += 2;
+        pos.y += 2;
+        requestAnimationFrame(update);
+    }
+    
+    update();
 });
