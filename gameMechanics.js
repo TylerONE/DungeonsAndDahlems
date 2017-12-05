@@ -1,4 +1,3 @@
-import SpriteSheet from './SpriteSheet.js';
 import {loadLevel} from './loaders.js';
 import {loadDahlemSprite, loadBackgroundSprites} from './sprites.js';
 
