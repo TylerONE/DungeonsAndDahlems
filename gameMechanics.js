@@ -1,7 +1,7 @@
-import Compositor from './Compositor.js';
-import {loadLevel} from './loaders.js';
-import {loadDahlemSprite, loadBackgroundSprites} from './sprites.js';
-import {createBackgroundLayer} from '.layers.js';
+import Compositor from './gameBase/Compositor.js';
+import {loadLevel} from './gameBase/loaders.js';
+import {loadDahlemSprite, loadBackgroundSprites} from './gameBase/sprites.js';
+import {createBackgroundLayer} from './gameBase/layers.js';
 
 const canvas = document.getElementById('gameScreen');
 const context = canvas.getContext('2d');
