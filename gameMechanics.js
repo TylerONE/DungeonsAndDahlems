@@ -25,5 +25,10 @@ Promise.all([
         drawBackground(background, context, sprites);
         });
     
-    dahlemSprite.draw('idle', context, 64, 64);
+    const pos = {
+        x: 64,
+        y:64,
+    };
+    
+    dahlemSprite.draw('idle', context, pos.x, pos.y);
 });
