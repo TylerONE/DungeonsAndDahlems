@@ -41,6 +41,12 @@ function createBackgroundLayer(backgrounds, sprites) {
     };
 }
 
+function createSpriteLayer(sprite, pos) {
+    return function drawSpriteLayer(context) {
+           sprite.draw('idle', context, pos.x, pos.y);
+    }
+}
+
 Promise.all([
     loadDahlemSprite(),
     loadBackgroundSprites(),
@@ -51,16 +57,18 @@ Promise.all([
     
     const backgroundLayer = createBackgroundLayer(level.backgrounds, sprites);
     comp.layers.push(backgroundLayer);
-    
+   
     
     const pos = {
         x: 64,
         y:64,
     };
     
+    const spriteLayer = createSpriteLayer(dahlemSprite, pos);
+    comp.layers.push(spriteLayer);
+    
     function update() {
-        comp.draw(context);
-        dahlemSprite.draw('idle', context, pos.x, pos.y);
+        comp.draw(context); 
         pos.x += 2;
         pos.y += 2;
         requestAnimationFrame(update);
