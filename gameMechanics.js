@@ -29,8 +29,8 @@ class Compositor {
 
 function createBackgroundLayer(backgrounds, sprites) {
     const buffer = document.createElement('canvas');
-    buffer.width = 256; //1500px
-    buffer.height = 240; //500px
+    buffer.width = 1500;
+    buffer.height = 500;
     
     backgrounds.forEach(background => {
         drawBackground(background, buffer.getContext('2d'), sprites);
