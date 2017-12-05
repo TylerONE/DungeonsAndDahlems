@@ -21,8 +21,12 @@ Promise.all([
     loadLevel('level1'),
     ])
 .then(([dahlemSprite, sprites, level]) => {
+    const backgroundBuffer = document.createElement('canvas');
+    backgroundBuffer.width = 1500;
+    backgroundBuffer.height = 500;
+    
     level.backgrounds.forEach(background => {
-        drawBackground(background, context, sprites);
+        drawBackground(background, backgroundBuffer.getContext('2d'), sprites);
         });
     
     const pos = {
@@ -31,6 +35,7 @@ Promise.all([
     };
     
     function update() {
+        context.drawImage(backgroundBuffer, 0, 0);
         dahlemSprite.draw('idle', context, pos.x, pos.y);
         pos.x += 2;
         pos.y += 2;
