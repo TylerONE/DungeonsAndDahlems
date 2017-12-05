@@ -1,5 +1,6 @@
 import SpriteSheet from './SpriteSheet.js';
 import {loadImage, loadLevel} from './loaders.js';
+import {loadDahlemSprite, loadBackgroundSprites} from './sprites.js';
 
 function drawBackground(background, context, sprites) {
     background.ranges.forEach(([x1, x2, y1, y2]) => {
