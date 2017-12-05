@@ -7,9 +7,9 @@ const canvas = document.getElementById('gameScreen');
 const context = canvas.getContext('2d');
 
 
-function createSpriteLayer(sprite, pos) {
+function createSpriteLayer(entity) {
     return function drawSpriteLayer(context) {
-     sprite.draw('idle', context, pos.x, pos.y);
+        entity.draw(context);
     }
 }
 
@@ -48,12 +48,16 @@ Promise.all([
     dahlem.pos.set(64, 180);
     dahlem.vel.set(2, -10);
     
+    dahlem.draw = function drawDahlem(context) {
+        dahlemSprite.draw('idle', context, this.pos.x, this.pos.y);
+    }
+    
     dahlem.update = function updateDahlem() {
         this.pos.x += this.vel.x;
         this.pos.y += this.vel.y;
     }
     
-    const spriteLayer = createSpriteLayer(dahlemSprite, dahlem.pos);
+    const spriteLayer = createSpriteLayer(dahlem);
     comp.layers.push(spriteLayer);
     
     function update() {
