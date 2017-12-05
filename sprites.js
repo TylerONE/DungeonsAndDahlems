@@ -1,4 +1,5 @@
 import {loadImage} from './loaders.js';
+import SpriteSheet from './SpriteSheet.js';
 
 export function loadDahlemSprite() {
     return loadImage('gameBase/Character.png')
