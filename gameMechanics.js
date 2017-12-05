@@ -44,7 +44,7 @@ Promise.all([
    
     const gravity = 0.5;
     
-    cont dahlem = new Entity();
+    const dahlem = new Entity();
     dahlem.pos.set(64, 180);
     dahlem.vel.set(2, -10);
     
