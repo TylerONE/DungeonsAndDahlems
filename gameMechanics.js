@@ -19,7 +19,9 @@ Promise.all([
     const backgroundLayer = createBackgroundLayer(level.backgrounds, backgroundSprites);
     comp.layers.push(backgroundLayer);
    
-    const gravity = 0.5;
+    const gravity = 30;
+    dahlem.pos.set(64, 180);
+    dahlem.vel.set(200, -600);
     
     const spriteLayer = createSpriteLayer(dahlem);
     comp.layers.push(spriteLayer);
