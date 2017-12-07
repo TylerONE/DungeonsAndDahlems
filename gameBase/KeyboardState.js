@@ -1,3 +1,6 @@
+const PRESSED = 1;
+const RELEASED = 0;
+
 export default class KeyboardState {
     constructor() {
         // holds the current state of given key
@@ -20,5 +23,24 @@ export default class KeyboardState {
           }
           
           event.preventDefault();
+          
+          const keyState = event.type === 'keydown' ? PRESSED : RELEASED;
+          
+          if (this.keyStates.get(keyCode) === keyState) {
+            return;   
+          }
+          
+          this.keyStates.set(keyCode, keyState);
+          console.log(this.keyStates);
+          
+          this.keyMap.get(keyCode)(keyState);
       }
+    
+    listenTo(window) {
+        ['keydown', 'keyup'].forEach(eventName => {
+        window.addEventListener('keydown', event => {
+        this.handleEvent(event);
+         });
+        });
+    }
 }
