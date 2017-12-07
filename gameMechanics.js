@@ -16,7 +16,7 @@ Promise.all([
 .then(([dahlem, level]) => {
    
     const gravity = 2000;
-    dahlem.pos.set(64, 384);
+    dahlem.pos.set(64, 64);
     
     const SPACE = 32;
     const input = new Keyboard();
