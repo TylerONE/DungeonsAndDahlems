@@ -24,19 +24,15 @@ Promise.all([
    
     const gravity = 800;
     dahlem.pos.set(64, 384);
-    dahlem.vel.set(200, -600);
     
     const SPACE = 32;
     const input = new Keyboard();
     input.addMapping(SPACE, keyState => {
         if (keyState) {
             dahlem.jump.start();
-            console.log(keyState);
         } else {
             dahlem.jump.cancel(); 
-            console.log(keyState);
         }
-        console.log(keyState);
     });
     input.listenTo(window);
     
