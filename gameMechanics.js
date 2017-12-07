@@ -26,16 +26,17 @@ Promise.all([
     const spriteLayer = createSpriteLayer(dahlem);
     comp.layers.push(spriteLayer);
     
-    let deltaTime = 0;
+    const deltaTime = 1/60;
     let lastTime = 0;
     
     function update(time) {
-        deltaTime = (time - lastTime) / 1000;
+        //deltaTime = (time - lastTime) / 1000;
         
         comp.draw(context); 
         dahlem.update(deltaTime);
         dahlem.vel.y += gravity;
-        requestAnimationFrame(update);
+        //requestAnimationFrame(update);
+        setTimeout(update, 1000/60, performance.now());
         
         lastTime = time;
     }
