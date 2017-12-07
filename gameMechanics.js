@@ -31,8 +31,10 @@ Promise.all([
     input.addMapping(SPACE, keyState => {
         if (keyState) {
             dahlem.jump.start();
+            console.log(keyState);
         } else {
-            dahlem.jump.cancel();   
+            dahlem.jump.cancel(); 
+            console.log(keyState);
         }
         console.log(keyState);
     });
