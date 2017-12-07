@@ -6,6 +6,8 @@ import {createDahlem} from './gameBase/entities.js';
 import {loadBackgroundSprites} from './gameBase/sprites.js';
 import {createBackgroundLayer, createSpriteLayer} from './gameBase/layers.js';
 
+
+
 const canvas = document.getElementById('gameScreen');
 const context = canvas.getContext('2d');
 
@@ -20,7 +22,7 @@ Promise.all([
     const backgroundLayer = createBackgroundLayer(level.backgrounds, backgroundSprites);
     comp.layers.push(backgroundLayer);
    
-    const gravity = 1600;
+    const gravity = 2000;
     dahlem.pos.set(64, 384);
     dahlem.vel.set(200, -600);
     
