@@ -32,7 +32,7 @@ Promise.all([
         console.log(time, deltaTime);
         
         comp.draw(context); 
-        dahlem.update();
+        dahlem.update(deltaTime);
         dahlem.vel.y += gravity;
         requestAnimationFrame(update);
         
