@@ -6,7 +6,10 @@ import {createDahlem} from './gameBase/entities.js';
 import {loadBackgroundSprites} from './gameBase/sprites.js';
 import {createBackgroundLayer, createSpriteLayer} from './gameBase/layers.js';
 
-
+window.addEventListener('keydown', event => {
+    event.preventDefault();
+    console.log(event);   
+}
 
 const canvas = document.getElementById('gameScreen');
 const context = canvas.getContext('2d');
