@@ -1,7 +1,7 @@
 import {Trait} from '../Entity.js';
 
 export default class Jump extends Trait {
- constructor() {;
+ constructor() {
    super('jump');
    
    this.duration = 0.5;
