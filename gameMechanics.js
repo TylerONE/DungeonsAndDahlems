@@ -6,10 +6,12 @@ import {createDahlem} from './gameBase/entities.js';
 import {loadBackgroundSprites} from './gameBase/sprites.js';
 import {createBackgroundLayer, createSpriteLayer} from './gameBase/layers.js';
 
-window.addEventListener('keydown', event => {
-    event.preventDefault();
-    console.log(event);   
-}
+import Keyboard from './gameBase/KeyboardState.js';
+
+const input = new Keyboard();
+input.addMapping(32, keyState => {
+    console.log(keyState);
+});
 
 const canvas = document.getElementById('gameScreen');
 const context = canvas.getContext('2d');
