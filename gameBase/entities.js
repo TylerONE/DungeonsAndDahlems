@@ -14,8 +14,8 @@ export function createDahlem() {
     }
     
     dahlem.update = function updateDahlem(deltaTime) {
-        this.pos.x += this.vel.x;
-        this.pos.y += this.vel.y;
+        this.pos.x += this.vel.x * deltaTime;
+        this.pos.y += this.vel.y * deltaTime;
     }
     return dahlem;
   })
