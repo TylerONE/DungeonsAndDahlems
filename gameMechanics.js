@@ -1,4 +1,5 @@
 import Compositor from './gameBase/Compositor.js';
+import Entity from './gameBase/Entity.js';
 import {loadLevel} from './gameBase/loaders.js';
 import {loadDahlemSprite, loadBackgroundSprites} from './gameBase/sprites.js';
 import {createBackgroundLayer} from './gameBase/layers.js';
@@ -13,23 +14,6 @@ function createSpriteLayer(entity) {
     }
 }
 
-class Vec2 {
-    constructor(x, y) {
-        this.set(x, y);
-    }
-    
-    set(x, y) {
-        this.x = x;
-        this.y = y;
-    }
-}
-
-class Entity {
-    constructor() {
-     this.pos = new Vec2(0, 0); 
-        this.vel = new Vec2(0, 0);
-    }
-}
 
 Promise.all([
     loadDahlemSprite(),
