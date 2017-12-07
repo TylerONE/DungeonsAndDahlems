@@ -8,12 +8,6 @@ import {createBackgroundLayer, createSpriteLayer} from './gameBase/layers.js';
 
 import Keyboard from './gameBase/KeyboardState.js';
 
-const input = new Keyboard();
-input.addMapping(32, keyState => {
-    console.log(keyState);
-});
-input.listenTo(window);
-
 const canvas = document.getElementById('gameScreen');
 const context = canvas.getContext('2d');
 
@@ -31,6 +25,19 @@ Promise.all([
     const gravity = 800;
     dahlem.pos.set(64, 384);
     dahlem.vel.set(200, -600);
+    
+    const SPACE = 32;
+    const input = new Keyboard();
+    input.addMapping(SPACE, keyState => {
+        if (keyState) {
+            dahlem.jump.start();
+        } else {
+            dahlem.jump.cancel();   
+        }
+        console.log(keyState);
+    });
+    input.listenTo(window);
+    
     
     const spriteLayer = createSpriteLayer(dahlem);
     comp.layers.push(spriteLayer);
