@@ -20,7 +20,7 @@ Promise.all([
     const backgroundLayer = createBackgroundLayer(level.backgrounds, backgroundSprites);
     comp.layers.push(backgroundLayer);
    
-    const gravity = 30;
+    const gravity = 15;
     dahlem.pos.set(64, 384);
     dahlem.vel.set(200, -600);
     
