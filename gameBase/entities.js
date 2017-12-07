@@ -13,7 +13,7 @@ export function createDahlem() {
         sprite.draw('idle', context, this.pos.x, this.pos.y);
     }
     
-    dahlem.update = function updateDahlem() {
+    dahlem.update = function updateDahlem(deltaTime) {
         this.pos.x += this.vel.x;
         this.pos.y += this.vel.y;
     }
