@@ -20,7 +20,7 @@ Promise.all([
     const backgroundLayer = createBackgroundLayer(level.backgrounds, backgroundSprites);
     comp.layers.push(backgroundLayer);
    
-    const gravity = 25;
+    const gravity = 2000;
     dahlem.pos.set(64, 384);
     dahlem.vel.set(200, -600);
     
@@ -32,7 +32,7 @@ Promise.all([
             comp.draw(context); 
             dahlem.update(deltaTime);
             console.log(dahlem.pos);
-            dahlem.vel.y += gravity;
+            dahlem.vel.y += gravity * deltaTime;
     }
     
     timer.start();
