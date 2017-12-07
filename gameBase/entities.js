@@ -1,4 +1,4 @@
-import Entity from './Entitiy.js';
+import Entity from './Entity.js';
 import {loadDahlemSprite} from './sprites.js';
 
 
