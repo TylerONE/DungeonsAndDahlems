@@ -1,5 +1,5 @@
 import Compositor from './gameBase/Compositor.js';
-import Timer from '.gameBase/Timer.js';
+import Timer from './gameBase/Timer.js';
 import Entity from './gameBase/Entity.js';
 import {loadLevel} from './gameBase/loaders.js';
 import {createDahlem} from './gameBase/entities.js';
