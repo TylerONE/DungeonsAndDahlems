@@ -1,4 +1,4 @@
-import Compositor from './gameBase/Compositor.js';
+import Compositor from './Compositor.js';
 
 export default class Level{
     constructor() {
