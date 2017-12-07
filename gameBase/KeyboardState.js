@@ -19,7 +19,7 @@ export default class KeyboardState {
         
         if(!this.keyMap.has(keyCode)) {
             //did not have key mapped
-            return false;
+            return;
           }
           
           event.preventDefault();
