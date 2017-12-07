@@ -1,6 +1,6 @@
 import Entity, {Trait} from './Entity.js';
-import Jump from '/traits/Jump.js';
-import Velocity from '/traits/Velocity.js';
+import Jump from './traits/Jump.js';
+import Velocity from './traits/Velocity.js';
 import {loadDahlemSprite} from './sprites.js';
 
 export function createDahlem() {
