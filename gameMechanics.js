@@ -12,6 +12,7 @@ const input = new Keyboard();
 input.addMapping(32, keyState => {
     console.log(keyState);
 });
+input.listenTo(window);
 
 const canvas = document.getElementById('gameScreen');
 const context = canvas.getContext('2d');
