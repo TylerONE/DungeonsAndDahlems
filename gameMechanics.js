@@ -1,4 +1,5 @@
 import Compositor from './gameBase/Compositor.js';
+import Timer from '.gameBase/Timer.js';
 import Entity from './gameBase/Entity.js';
 import {loadLevel} from './gameBase/loaders.js';
 import {createDahlem} from './gameBase/entities.js';
@@ -26,20 +27,13 @@ Promise.all([
     const spriteLayer = createSpriteLayer(dahlem);
     comp.layers.push(spriteLayer);
     
-    const deltaTime = 1/60;
-    let lastTime = 0;
-    
-    function update(time) {
-        //deltaTime = (time - lastTime) / 1000;
-        
-        comp.draw(context); 
-        dahlem.update(deltaTime);
-        dahlem.vel.y += gravity;
-        //requestAnimationFrame(update);
-        setTimeout(update, 1000/60, performance.now());
-        
-        lastTime = time;
+    const timer = new Timer(1/60);
+    timer.update = function update(deltaTime) {
+            comp.draw(context); 
+            dahlem.update(deltaTime);
+            console.log(dahlem.pos);
+            dahlem.vel.y += gravity;
     }
     
-    update(0);
+    timer.start();
 });
