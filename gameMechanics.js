@@ -28,7 +28,7 @@ Promise.all([
     let lastTime = 0;
     
     function update(time) {
-        deltaTime = time - lastTime;
+        deltaTime = (time - lastTime) / 1000;
         
         comp.draw(context); 
         dahlem.update(deltaTime);
@@ -38,5 +38,5 @@ Promise.all([
         lastTime = time;
     }
     
-    update();
+    update(0);
 });
