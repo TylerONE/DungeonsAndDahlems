@@ -15,7 +15,7 @@ Promise.all([
     ])
 .then(([dahlem, level]) => {
    
-    const gravity = 800;
+    const gravity = 2000;
     dahlem.pos.set(64, 384);
     
     const SPACE = 32;
