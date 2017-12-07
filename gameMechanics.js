@@ -29,9 +29,8 @@ Promise.all([
     
     const timer = new Timer(1/60);
     timer.update = function update(deltaTime) {
-            comp.draw(context); 
             dahlem.update(deltaTime);
-            console.log(dahlem.pos);
+            comp.draw(context); 
             dahlem.vel.y += gravity * deltaTime;
     }
     
