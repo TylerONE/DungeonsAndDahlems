@@ -24,11 +24,19 @@ Promise.all([
     const spriteLayer = createSpriteLayer(dahlem);
     comp.layers.push(spriteLayer);
     
-    function update() {
+    let deltaTime = 0;
+    let lastTime = 0;
+    
+    function update(time) {
+        deltaTime = time - lastTime;
+        console.log(time, deltaTime);
+        
         comp.draw(context); 
         dahlem.update();
         dahlem.vel.y += gravity;
         requestAnimationFrame(update);
+        
+        lastTime = time;
     }
     
     update();
