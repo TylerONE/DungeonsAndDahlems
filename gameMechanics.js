@@ -3,17 +3,10 @@ import Entity from './gameBase/Entity.js';
 import {loadLevel} from './gameBase/loaders.js';
 import {createDahlem} from './gameBase/entities.js';
 import {loadBackgroundSprites} from './gameBase/sprites.js';
-import {createBackgroundLayer} from './gameBase/layers.js';
+import {createBackgroundLayer, createSpriteLayer} from './gameBase/layers.js';
 
 const canvas = document.getElementById('gameScreen');
 const context = canvas.getContext('2d');
-
-
-function createSpriteLayer(entity) {
-    return function drawSpriteLayer(context) {
-        entity.draw(context);
-    }
-}
 
 Promise.all([
     createDahlem(),
