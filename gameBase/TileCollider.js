@@ -11,7 +11,7 @@ export default class TileCollider {
      return; 
     }
     
-    if (match.tile.name !== 'upperground' && match.tile.name !== 'lowerground') {
+    if (match.tile.name !== 'upperGround' && match.tile.name !== 'lowerGround') {
       return;
     }
     
