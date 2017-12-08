@@ -12,7 +12,7 @@ export function loadImage(url){
  });
 }
 
-funtion createTiles(level, backgrounds){
+function createTiles(level, backgrounds){
  backgrounds.forEach(background => {
    background.ranges.forEach(([x1, x2, y1, y2]) => {  
        for(let x = x1; x < x2; ++x) {
