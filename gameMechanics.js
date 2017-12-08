@@ -15,8 +15,8 @@ Promise.all([
     ])
 .then(([dahlem, level]) => {
    
-    const gravity = 2000;
-    dahlem.pos.set(64, 384);
+    const gravity = 1000;
+    dahlem.pos.set(64, 64);
     
     level.entities.add(dahlem);
     
