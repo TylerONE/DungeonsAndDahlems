@@ -23,6 +23,7 @@ Promise.all([
     input.addMapping(SPACE, keyState => {
         if (keyState) {
             dahlem.jump.start();
+            console.log(dahlem.pos);
         } else {
             dahlem.jump.cancel(); 
         }
