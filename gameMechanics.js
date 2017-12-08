@@ -18,6 +18,8 @@ Promise.all([
     const gravity = 2000;
     dahlem.pos.set(64, 384);
     
+    level.entities.add(dahlem);
+    
     const SPACE = 32;
     const input = new Keyboard();
     input.addMapping(SPACE, keyState => {
