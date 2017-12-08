@@ -13,7 +13,7 @@ export function loadDahlemSprite() {
 export function loadBackgroundSprites() {
     return loadImage('gameBase/tileset.png')
     .then(image => {
-        const sprites = new SpriteSheet(image, 16, 16);
+        const sprites = new SpriteSheet(image, 32, 32);
         sprites.defineTile('upperGround', 0, 0);
         sprites.defineTile('lowerGround', 0, 1);
         sprites.defineTile('sky', 2.92, 22.89);
