@@ -5,7 +5,7 @@ export function loadDahlemSprite() {
     return loadImage('gameBase/Character.png')
     .then(image => {
         const sprites = new SpriteSheet(image, 64, 64);
-        sprites.define('idle', 252, 1, 16, 32);
+        sprites.define('idle', 256, 1, 16, 32);
         return sprites;
     });
 }
