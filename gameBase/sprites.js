@@ -4,7 +4,7 @@ import SpriteSheet from './SpriteSheet.js';
 export function loadDahlemSprite() {
     return loadImage('gameBase/Character.png')
     .then(image => {
-        const sprites = new SpriteSheet(image, 16, 16);
+        const sprites = new SpriteSheet(image, 64, 64);
         sprites.define('idle', 259, 1, 16, 32);
         return sprites;
     });
