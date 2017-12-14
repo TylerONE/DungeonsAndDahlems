@@ -19,8 +19,7 @@ Promise.all([
     const gravity = 800;
     dahlem.pos.set(64, -12000);
     
-    createCollisionLayer(level);
-    level.drawCollision(context);
+    level.comp.layers.push(createCollisionLayer(level));
     
     level.entities.add(dahlem);
     
