@@ -43,6 +43,6 @@ export function createCollisionLayer(level) {
         });
         
         resolveTiles.length = 0;
-    }
+    };
 }
 
