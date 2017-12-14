@@ -2,7 +2,7 @@
 import Timer from './gameBase/Timer.js';
 import {loadLevel} from './gameBase/loaders.js';
 import {createDahlem} from './gameBase/entities.js';
-import {createCollisionLayer, drawCollisonLayer} from './gameBase/layers.js';
+import {createCollisionLayer} from './gameBase/layers.js';
 import Entity from './gameBase/Entity.js';
 
 import Keyboard from './gameBase/KeyboardState.js';
@@ -20,7 +20,6 @@ Promise.all([
     dahlem.pos.set(64, -12000);
     
     createCollisionLayer(level);
-    drawCollisionLayer(context);
     
     level.entities.add(dahlem);
     
