@@ -36,15 +36,10 @@ export function createCollisionLayer(level) {
     }
     
     return function drawCollision(context) {
-        console.log('error start');
-        context.strokeStyle = 'blue';
         resolvedTiles.forEach(({x, y}) => {
-             console.log('error middle');
-            context.beginPath();
-            context.rect(x * tileSize, y * tileSize, tileSize, tileSize);
-            context.stroke();
+            console.log('Would draw', x, y);
         });
-         console.log('error end');
+        
         resolvedTiles.length = 0;
     };
 }
