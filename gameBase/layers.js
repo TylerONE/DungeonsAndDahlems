@@ -37,6 +37,7 @@ export function createCollisionLayer(level) {
     return function drawCollision(context) {
         context.strokeStyle = 'blue';
         resolvedTiles.forEach(({x, y}) => {
+            console.log('XD');
             context.beginPath();
             context.rect(x * tileSize, y * tileSize, tileSize, tileSize);
             context.stroke();
