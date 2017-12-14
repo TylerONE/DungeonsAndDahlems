@@ -7,9 +7,9 @@ export function createDahlem() {
  return loadDahlemSprite()
  .then(sprite => {
     const dahlem = new Entity();
-    
-    dahlem.addTrait(new Velocity());
+  
     dahlem.addTrait(new Jump());
+    dahlem.addTrait(new Velocity());
   
     dahlem.draw = function drawDahlem(context) {
         sprite.draw('idle', context, this.pos.x, this.pos.y);
