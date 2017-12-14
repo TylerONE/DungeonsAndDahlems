@@ -20,7 +20,7 @@ Promise.all([
     dahlem.pos.set(64, -12000);
     
     createCollisionLayer(level);
-    drawCollision(context);
+    level.drawCollision(context);
     
     level.entities.add(dahlem);
     
