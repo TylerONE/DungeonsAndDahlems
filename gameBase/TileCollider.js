@@ -6,7 +6,14 @@ export default class TileCollider {
   }
   
   checkY(entity) {
-    const match = this.tiles.matchByPosition(entity.pos.x, entity.pos.y);
+    const matches = this.tiles.searchByRange(
+      entity.pos.x, entity.pos.x + entity.size.x,
+      entity.pos.y, entity.pos.y + entity.size.y);
+    
+    matches.forEach(match => {
+     //HERERERhsdf
+    });
+    
     if (!match) {
      return; 
     }
