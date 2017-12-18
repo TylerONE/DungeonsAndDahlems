@@ -33,6 +33,12 @@ Promise.all([
             dahlem.jump.cancel(); 
         }
     });
+        input.addMapping(39, keyState => {
+        dahlem.go.dir = keyState;
+    });
+    input.addMapping(37, keyState => {
+        dahlem.go.dir = -keyState;
+    });
     input.listenTo(window);
     
     ['mousedown', 'mousemove'].forEach(eventName => {
