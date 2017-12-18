@@ -8,7 +8,7 @@ export function createDahlem() {
  return loadDahlemSprite()
  .then(sprite => {
     const dahlem = new Entity();
-    dahlem.size.set(18, 32);
+    dahlem.size.set(18, 64);
   
     dahlem.addTrait(new Go());
     dahlem.addTrait(new Jump());
