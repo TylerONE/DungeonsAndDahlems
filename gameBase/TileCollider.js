@@ -11,13 +11,6 @@ export default class TileCollider {
       entity.pos.y, entity.pos.y + entity.size.y);
     
     matches.forEach(match => {
-     //HERERERhsdf
-    });
-    
-    if (!match) {
-     return; 
-    }
-    
     if (match.tile.name !== 'upperGround' && match.tile.name !== 'lowerGround') {
       return;
     }
@@ -33,6 +26,7 @@ export default class TileCollider {
         entity.vel.y = 0;
       }
     }
+   });
   }
   
   test(entity){
