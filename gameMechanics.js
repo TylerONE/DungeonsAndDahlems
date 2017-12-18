@@ -23,22 +23,8 @@ Promise.all([
     
     level.entities.add(dahlem);
     
-    const SPACE = 32;
-    const input = new Keyboard();
-    input.addMapping(SPACE, keyState => {
-        if (keyState) {
-            dahlem.jump.start();
-            console.log(dahlem.pos);
-        } else {
-            dahlem.jump.cancel(); 
-        }
-    });
-        input.addMapping(39, keyState => {
-        dahlem.go.dir = keyState;
-    });
-    input.addMapping(37, keyState => {
-        dahlem.go.dir = -keyState;
-    });
+    const input = setupKeyboard(dahlem);
+
     input.listenTo(window);
     
     ['mousedown', 'mousemove'].forEach(eventName => {
