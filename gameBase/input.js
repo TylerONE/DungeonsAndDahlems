@@ -1,4 +1,4 @@
-import Keyboard from './gameBase/KeyboardState.js';
+import Keyboard from './KeyboardState.js';
 
 export function setupKeyboard(entity) {   
     const SPACE = 32;
