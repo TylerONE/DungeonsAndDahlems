@@ -12,7 +12,7 @@ export function createDahlem() {
   
     dahlem.addTrait(new Go());
     dahlem.addTrait(new Jump());
-    dahlem.addTrait(new Velocity());
+    //dahlem.addTrait(new Velocity());
   
     dahlem.draw = function drawDahlem(context) {
         sprite.draw('idle', context, this.pos.x, this.pos.y);
