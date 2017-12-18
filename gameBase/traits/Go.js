@@ -9,6 +9,6 @@ export default class Go extends Trait {
  }
  
  update(entity, deltaTime) {
-        entity.vel.x = this.speed * this.direction * deltaTime;
+        entity.vel.x = this.speed * this.dir * deltaTime;
  }
 }
