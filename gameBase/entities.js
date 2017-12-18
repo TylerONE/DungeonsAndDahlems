@@ -1,4 +1,5 @@
 import Entity, {Trait} from './Entity.js';
+import Go from './traits/Go.js';
 import Jump from './traits/Jump.js';
 import Velocity from './traits/Velocity.js';
 import {loadDahlemSprite} from './sprites.js';
@@ -9,6 +10,7 @@ export function createDahlem() {
     const dahlem = new Entity();
     dahlem.size.set(18, 32);
   
+    dahlem.addTrait(new Go());
     dahlem.addTrait(new Jump());
     dahlem.addTrait(new Velocity());
   
