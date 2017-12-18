@@ -3,9 +3,8 @@ import Timer from './gameBase/Timer.js';
 import {loadLevel} from './gameBase/loaders.js';
 import {createDahlem} from './gameBase/entities.js';
 import {createCollisionLayer} from './gameBase/layers.js';
+import {setupKeyboard} from './gameBase/input.js';
 import Entity from './gameBase/Entity.js';
-
-import Keyboard from './gameBase/KeyboardState.js';
 
 const canvas = document.getElementById('gameScreen');
 const context = canvas.getContext('2d');
