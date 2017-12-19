@@ -1,6 +1,7 @@
-11-30-17 : Created a log to track progress and keep times in the guide.
-11-30-17: episode 2 time: 7:00
-12-5-17: ep 2 finished started ep 3 time: 8:03
-12-6-17: ep 3 done ep 4 done also
-12-7-17: ep 5 started time: 31:07
-12-8-17: ep 5: time :1:19:07
+episode 2 time: 7:00
+ep 2 finished started ep 3 time: 8:03
+ep 3 done ep 4 done also
+ep 5: time :1:19:07
+ep 5 done
+ep 6 started
+ep 6: time: 
