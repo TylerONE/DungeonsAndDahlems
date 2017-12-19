@@ -1,14 +1,11 @@
 import Keyboard from './KeyboardState.js';
 
 export function setupKeyboard(entity) {   
-    const SPACE = 32;
-    
     const input = new Keyboard();
     
     input.addMapping('Space', keyState => {
         if (keyState) {
             entity.jump.start();
-            console.log(dahlem.pos);
         } else {
             entity.jump.cancel(); 
         }
