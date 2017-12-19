@@ -14,9 +14,7 @@ Promise.all([
     loadLevel('level1'),
     ])
 .then(([dahlem, level]) => {
-   
-    const gravity = 800;
-    dahlem.pos.set(64, -12000);
+    dahlem.pos.set(64, -64);
     
     level.comp.layers.push(createCollisionLayer(level));
     
@@ -40,7 +38,6 @@ Promise.all([
     timer.update = function update(deltaTime) {
             level.update(deltaTime);
             level.comp.draw(context); 
-            dahlem.vel.y += gravity * deltaTime;
     }
     
     timer.start();
