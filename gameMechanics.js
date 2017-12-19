@@ -16,6 +16,9 @@ Promise.all([
 .then(([dahlem, level]) => {
     dahlem.pos.set(64, 64);
     
+    //Shows hit boxes:
+    level.comp.layers.push(createCollisionLayer(level));
+    
     level.entities.add(dahlem);
     
     const input = setupKeyboard(dahlem);
