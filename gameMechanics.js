@@ -28,6 +28,16 @@ Promise.all([
 
     input.listenTo(window);
     
+     ['mousedown', 'mousemove'].forEach(eventName => {
+ -        canvas.addEventListener(eventName, event => {
+ -            if (event.buttons === 1) {
+ -             dahlem.vel.set(0, 0);
+ -             dahlem.pos.set(
+                 event.offsetX + camera.pos.x,
+                 event.offsetY + camera.pos.y);   
+ -            }
+ -        });
+ -    });
     
     const timer = new Timer(1/60);
     timer.update = function update(deltaTime) {
