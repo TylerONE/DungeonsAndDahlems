@@ -4,4 +4,4 @@ ep 3 done ep 4 done also
 ep 5: time :1:19:07
 ep 5 done
 ep 6 started
-ep 6: time: 
+ep 6: time: 15:32
