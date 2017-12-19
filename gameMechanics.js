@@ -14,6 +14,8 @@ Promise.all([
     loadLevel('level1'),
     ])
 .then(([dahlem, level]) => {
+    const camera = new Camera();
+    
     dahlem.pos.set(64, 64);
     
     //Shows hit boxes:
@@ -29,7 +31,7 @@ Promise.all([
     const timer = new Timer(1/60);
     timer.update = function update(deltaTime) {
             level.update(deltaTime);
-            level.comp.draw(context); 
+            level.comp.draw(context, camera); 
     }
     
     timer.start();
