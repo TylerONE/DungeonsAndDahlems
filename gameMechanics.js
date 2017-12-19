@@ -1,4 +1,4 @@
-
+import Camera from './gameBase/Camera.js';
 import Timer from './gameBase/Timer.js';
 import {loadLevel} from './gameBase/loaders.js';
 import {createDahlem} from './gameBase/entities.js';
