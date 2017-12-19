@@ -15,6 +15,7 @@ Promise.all([
     ])
 .then(([dahlem, level]) => {
     const camera = new Camera();
+    window.camera = camera
     
     dahlem.pos.set(64, 64);
     
