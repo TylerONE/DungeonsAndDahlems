@@ -5,7 +5,7 @@ export function setupKeyboard(entity) {
     
     const input = new Keyboard();
     
-    input.addMapping(SPACE, keyState => {
+    input.addMapping('Space', keyState => {
         if (keyState) {
             entity.jump.start();
             console.log(dahlem.pos);
@@ -14,11 +14,11 @@ export function setupKeyboard(entity) {
         }
     });
     
-        input.addMapping(39, keyState => {
+        input.addMapping('ArrowRight', keyState => {
         entity.go.dir = keyState;
     });
     
-    input.addMapping(37, keyState => {
+    input.addMapping('ArrowLeft', keyState => {
         entity.go.dir = -keyState;
     });
     
