@@ -15,7 +15,7 @@ export function createDahlem() {
     //dahlem.addTrait(new Velocity());
   
     dahlem.draw = function drawDahlem(context) {
-        sprite.draw('idle', context, this.pos.x, this.pos.y);
+        sprite.draw('idle', context, 0, 0);
     }
     
     return dahlem;
