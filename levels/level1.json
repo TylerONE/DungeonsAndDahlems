@@ -4,7 +4,7 @@
           "tile": "sky",
           "ranges": [
               [
-                0, 424,
+                0, 212,
                 0, 16
               ]
           ]
@@ -13,9 +13,23 @@
           "tile": "upperGround",
           "ranges": [
               [
-                0, 424,
+                0, 212,
                 12, 16
-              ],
+              ]
+           ]
+        },
+              {
+          "tile": "sky",
+          "ranges": [
+              [
+                20, 22,
+                12, 14
+              ]
+          ]
+        },
+        {
+          "tile": "upperGround",
+          "ranges": [
               [
                  5, 8,
                  9, 10
@@ -46,7 +60,7 @@
           "tile": "lowerGround",
           "ranges": [
               [
-                0, 424,
+                0, 212,
                 13, 16
               ]
           ]
