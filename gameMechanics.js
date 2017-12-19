@@ -14,24 +14,13 @@ Promise.all([
     loadLevel('level1'),
     ])
 .then(([dahlem, level]) => {
-    dahlem.pos.set(64, -64);
-    
-    level.comp.layers.push(createCollisionLayer(level));
+    dahlem.pos.set(64, 64);
     
     level.entities.add(dahlem);
     
     const input = setupKeyboard(dahlem);
 
     input.listenTo(window);
-    
-    ['mousedown', 'mousemove'].forEach(eventName => {
-        canvas.addEventListener(eventName, event => {
-            if (event.buttons === 1) {
-             dahlem.vel.set(0, 0);
-             dahlem.pos.set(event.offsetX, event.offsetY);   
-            }
-        });
-    });
     
     
     const timer = new Timer(1/60);
